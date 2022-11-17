@@ -4,6 +4,7 @@ import com.api.mongodb.projectSB.domain.User;
 import com.api.mongodb.projectSB.dto.UserDTO;
 import com.api.mongodb.projectSB.repositories.UserRepository;
 import com.api.mongodb.projectSB.services.exception.ObjectNotFoundException;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +34,17 @@ public class UserService {
     public void delete(String id) {
         findById(id);
         userRepository.deleteById(id);
+    }
+
+    public User update(User user) {
+        User newUser = findById(user.getId());
+        updateData(newUser, user);
+        return userRepository.save(newUser);
+    }
+
+    private void updateData(User newUser, User user) {
+        newUser.setName(user.getName());
+        newUser.setEmail(user.getEmail());
     }
 
     public User fromDTO(UserDTO userDTO) {
