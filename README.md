@@ -1,10 +1,8 @@
 # API Fake Twitter
 
----
 
 ## Índice
 
----
 
 - [Sobre](#sobre)
 - [Tecnologias Usadas](#tecnologias-usadas)
@@ -13,7 +11,6 @@
 
 ## Sobre
 
----
 
 O objetivo desta API é criar um software que funcione como um fake
 backend do Twitter. Nesse app, um **Usuário** pode criar vários **Posts**
@@ -22,7 +19,6 @@ o padrão de arquitetura de software *MVC*.
 
 ## Tecnologias Usadas
 
----
 
 - [Java 17](https://docs.oracle.com/en/java/javase/17/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
@@ -31,13 +27,9 @@ o padrão de arquitetura de software *MVC*.
 
 ## Instância de Domínio
 
----
-
 ![dominioFakeTwitter](https://github.com/victorgabdev/api-spring-boot-mongodb/assets/75862737/0314bd25-39aa-4373-89dc-330fe270a00f)
 
 ## JSON
-
----
 
 Exemplo de saída JSON da API:
 
