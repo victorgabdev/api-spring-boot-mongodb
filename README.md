@@ -12,13 +12,11 @@
 ## Sobre
 
 
-O objetivo desta API é criar um software que funcione como um fake
-backend do Twitter. Nesse app, um **Usuário** pode criar vários **Posts**
-que também pode receber vários **Comentários**. A API foi criada utilizando
-o padrão de arquitetura de software *MVC*.
+A API Fake Twitter tem como objetivo criar um software que funcione como um backend simulado do Twitter. Nesta aplicação, um **Usuário** pode criar vários **Posts**, que também podem receber vários **Comentários**. A API foi desenvolvida utilizando o padrão de arquitetura de software *MVC*.
 
 ## Tecnologias Usadas
 
+A API Fake Twitter foi construída utilizando as seguintes tecnologias:
 
 - [Java 17](https://docs.oracle.com/en/java/javase/17/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
